@@ -15,6 +15,7 @@
 		27B785011D4905D000EF62F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B784FF1D4905D000EF62F7 /* LaunchScreen.storyboard */; };
 		27B7850C1D4905D000EF62F7 /* WaterFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B7850B1D4905D000EF62F7 /* WaterFlowTests.m */; };
 		27B785171D4905D000EF62F7 /* WaterFlowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B785161D4905D000EF62F7 /* WaterFlowUITests.m */; };
+		27B785261D4906CE00EF62F7 /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B785251D4906CE00EF62F7 /* WaterFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		27B785121D4905D000EF62F7 /* WaterFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B785161D4905D000EF62F7 /* WaterFlowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowUITests.m; sourceTree = "<group>"; };
 		27B785181D4905D000EF62F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B785241D4906CE00EF62F7 /* WaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
+		27B785251D4906CE00EF62F7 /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				27B784F51D4905D000EF62F7 /* AppDelegate.m */,
 				27B784F71D4905D000EF62F7 /* ViewController.h */,
 				27B784F81D4905D000EF62F7 /* ViewController.m */,
+				27B785241D4906CE00EF62F7 /* WaterFlowLayout.h */,
+				27B785251D4906CE00EF62F7 /* WaterFlowLayout.m */,
 				27B784FA1D4905D000EF62F7 /* Main.storyboard */,
 				27B784FD1D4905D000EF62F7 /* Assets.xcassets */,
 				27B784FF1D4905D000EF62F7 /* LaunchScreen.storyboard */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					27B784ED1D4905D000EF62F7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LX674834E2;
 					};
 					27B785061D4905D000EF62F7 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B784F91D4905D000EF62F7 /* ViewController.m in Sources */,
+				27B785261D4906CE00EF62F7 /* WaterFlowLayout.m in Sources */,
 				27B784F61D4905D000EF62F7 /* AppDelegate.m in Sources */,
 				27B784F31D4905D000EF62F7 /* main.m in Sources */,
 			);
@@ -413,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WaterFlow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rongchengtianxia.WaterFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WaterFlow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rongchengtianxia.WaterFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
